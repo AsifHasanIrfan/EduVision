@@ -14,7 +14,7 @@ body{
 .main-wrapper ul li{
     list-style-type: none;
 }
-.navbar{
+.megaNavbar{
     background: #fff;
     padding: 0 1rem;
     position: fixed;
@@ -32,12 +32,12 @@ body{
     padding: 1rem 0;
     border-bottom: 1px solid #ddd;
 }
-.navbar-brand{
+.megaNavbar-brand{
     font-size: 1.8rem;
     letter-spacing: 3px;
     font-weight: 500;
 }
-.navbar-toggler{
+.megaNavbar-toggler{
     display: block;
     border: none;
     background: transparent;
@@ -48,14 +48,17 @@ body{
     border: 2px solid #000;
     border-radius: 4px;
 }
-.navbar-toggler:hover{
+.megaNavbar-toggler:hover{
     opacity: 0.7;
 }
-.navbar-collapse{
+.megaNavbar-collapse{
     overflow-y: scroll;
     display: none;
 }
-.navbar-nav > li > a{
+.megaNavbar-nav {
+    margin-bottom: 0;
+}
+.megaNavbar-nav > li > a{
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: 700;
@@ -73,14 +76,14 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-.navbar-nav > li > a:hover{
+.megaNavbar-nav > li > a:hover{
     opacity: 0.7;
 }
-.sub-menu h4{
+/* .sub-menu h4{
     text-transform: capitalize;
     font-size: 1rem;
     padding: 0.5rem 0;
-}
+} */
 .sub-menu ul li{
     text-transform: capitalize;
     padding: 0.2rem 0;
@@ -92,8 +95,7 @@ body{
     transition: all 0.5s ease;
 }
 .sub-menu ul li a:hover{
-    padding-left: 14px;
-    opacity: 0.9;
+    text-decoration: underline;
 }
 .sub-menu{
     display: none;
@@ -101,79 +103,6 @@ body{
 
 .sub-menu-item{
     padding-left: 1.2rem;
-}
-/* .sub-menu-item:nth-child(3){
-    background: #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.sub-menu-item:nth-child(3) h2{
-    text-transform: capitalize;
-    margin: 1.5rem 0;
-}
-.sub-menu-item:nth-child(3) .btn{
-    border: 1px solid #000;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    background: #000;
-    color: #fff;
-    transition: all 0.5s ease;
-}
-.sub-menu-item:nth-child(3) .btn:hover{
-    background: transparent;
-    color: #000;
-}
-.sub-menu-item:nth-child(4){
-    width: 50%;
-    margin: 0 auto;
-    padding: 2rem 0;
-} */
-
-/* header */
-.header{
-    /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner-bg.jpg) center/cover no-repeat; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.header h2{
-    margin: 1rem;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #fff;
-    letter-spacing: 2px;
-}
-.header p{
-    margin: 1rem auto;
-    color: #fff;
-    width: 60%;
-    opacity: 0.8;
-    font-weight: 300;
-    font-size: 1.2rem;
-    text-align: center;
-}
-.header button{
-    margin: 1rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
-.header button:hover{
-    background: #fff;
-    color: #000;
 }
 
 .signin {
@@ -192,13 +121,13 @@ body{
     font-weight: 500;
     cursor: pointer;
     color: #fff;
-    padding: 8px;
-    width: 140px;
-    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+    border-radius: 150px;
 }
 /* Media Queries */
 @media screen and (min-width: 992px){
-    .navbar{
+    .megaNavbar{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
@@ -206,7 +135,7 @@ body{
         padding: 0 5rem;
         position: relative;
     }
-    .navbar-toggler{
+    .megaNavbar-toggler{
         display: none;
     }
     .brand-and-icon{
@@ -214,17 +143,17 @@ body{
         border-bottom: none;
         padding: 0;
     }
-    .navbar-collapse{
+    .megaNavbar-collapse{
         display: block!important;
         overflow-y: hidden;
         flex: 1 0 auto;
     }
-    .navbar-nav{
+    .megaNavbar-nav{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .navbar-nav > li > a{
+    .megaNavbar-nav > li > a{
         border-bottom: none;
         margin: 0 0.4rem;
         padding: 1.7rem 1.8rem 1.7rem 0.8rem;
@@ -237,16 +166,16 @@ body{
         top: 100%;
         background: #f8f8f8;
     }
-    .navbar-nav > li:hover .sub-menu{
+    .megaNavbar-nav > li:hover .sub-menu{
         display: grid!important;
         grid-template-columns: repeat(4, 1fr);
         padding: 0 5rem;
     }
-    .navbar-nav > li{
+    .megaNavbar-nav > li{
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.4s ease;
     }
-    .navbar-nav > li:hover{
+    .megaNavbar-nav > li:hover{
         border-bottom-color: #000;
     }
     .sub-menu-item{

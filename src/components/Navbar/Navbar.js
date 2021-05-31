@@ -4,16 +4,16 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div class = "main-wrapper">
-            <nav class = "navbar">
+            <nav class = "megaNavbar">
                 <div class = "brand-and-icon">
-                    <a href ="" class = "navbar-brand">EduVision</a>
-                    <button type = "button" class = "navbar-toggler">
+                    <a href ="" class = "megaNavbar-brand">EduVision</a>
+                    <button type = "button" class = "megaNavbar-toggler">
                         <i class = "fas fa-bars"></i>
                     </button>
                 </div>
 
-                <div class = "navbar-collapse">
-                <ul class = "navbar-nav">
+                <div class = "megaNavbar-collapse">
+                <ul class = "megaNavbar-nav">
 
                     <li>
                     <a href = "#" class = "menu-link">
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div class = "sub-menu">
                         {/* <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>cloud</h4>
+                        <h3>Cloud<span class = "text-danger" >.</span></h3>
                         <ul>
                             <li><a href = "#">Prototype</a></li>
                             <li><a href = "#">Craft</a></li>
@@ -36,15 +36,15 @@ const Navbar = () => {
                         {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Studio</h4>
+                        <h3>Studio<span class = "text-danger" >.</span></h3>
                         <ul>
                             <li><a href = "#">Design and animate</a></li>
                         </ul>
-                        <h4>DSM</h4>
+                        <h3>DSM<span class = "text-danger" >.</span></h3>
                         <ul>
                             <li><a href = "#">Build a design system</a></li>
                         </ul>
-                        <h4>Enterprise</h4>
+                        <h3>Enterprise<span class = "text-danger" >.</span></h3>
                         <ul>
                             <li><a href = "#">Elevate your business with design</a></li>
                         </ul>
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <div class = "sub-menu">
                         {/* <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Best Practices</h4>
+                        <h3>Best Practices</h3>
                         <ul>
                             <li><a href = "#">Overview</a></li>
                             <li><a href = "#">Design Maturity Model</a></li>
@@ -88,7 +88,7 @@ const Navbar = () => {
                         {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Industry Insights</h4>
+                        <h3>Industry Insights</h3>
                         <ul>
                             <li><a href = "#">Total Economic Impact of EduVision</a></li>
                             <li><a href = "#">Product Design Hiring Report</a></li>
@@ -100,7 +100,7 @@ const Navbar = () => {
                         {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Films</h4>
+                        <h3>Films</h3>
                         <ul>
                             <li><a href = "#">Squads</a></li>
                             <li><a href = "#">Design Disruptors</a></li>
@@ -110,7 +110,7 @@ const Navbar = () => {
                          {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Learn</h4>
+                        <h3>Learn</h3>
                         <ul>
                             <li><a href = "#">Explore</a></li>
                             <li><a href = "#">Course Catalog</a></li>
@@ -151,7 +151,7 @@ const Navbar = () => {
                     <div class = "sub-menu">
                         {/* <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Leadership & Innovation</h4>
+                        <h3>Leadership & Innovation</h3>
                         <ul>
                             <li><a href = "#">Design Leadership Forum</a></li>
                             <small>Learn from our industry's best.</small>
@@ -162,7 +162,7 @@ const Navbar = () => {
                         {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Webinars</h4>
+                        <h3>Webinars</h3>
                         <ul>
                             <li><a href = "#">Upcoming talks</a></li>
                             <li><a href = "#">All talks</a></li>
@@ -171,7 +171,7 @@ const Navbar = () => {
                         {/* <!-- end of item -->
                         <!-- item --> */}
                         <div class = "sub-menu-item">
-                        <h4>Events</h4>
+                        <h3>Events</h3>
                         <ul>
                             <li><a href = "#">Upcoming events</a></li>
                         </ul>

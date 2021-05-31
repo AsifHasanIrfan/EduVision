@@ -10,12 +10,10 @@ import flower2 from "../media/images/flower2.jpg"
 import { Divider } from 'antd';
 import FormatUnderlinedIcon from '@material-ui/icons/FormatUnderlined';
 import flower from "../media/images/flower.webp"
-import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
     return (
-        <div>
-            <Navbar />
+        <div>  
             <div className="my-2 py-2">
                 <h1 className="text-center">Take designs from ideas to development<br /> in one unified platform</h1>
             </div>
@@ -129,9 +127,7 @@ const Home = () => {
                 <div className="col-md-12">
                     <video className="w-100" loop autoPlay src={video5}></video>
                 </div>
-
             </div>
-
 
         </div>
 
