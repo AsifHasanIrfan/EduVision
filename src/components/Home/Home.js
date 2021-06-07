@@ -10,10 +10,16 @@ import flower2 from "../media/images/flower2.jpg"
 import { Divider } from 'antd';
 import FormatUnderlinedIcon from '@material-ui/icons/FormatUnderlined';
 import flower from "../media/images/flower.webp"
+import Navbar from '../Navbar/Navbar';
+import AddPost from '../AddPost';
+import PostList from '../PostList';
 
 const Home = () => {
     return (
-        <div>  
+        <div> 
+            <Navbar />
+            <AddPost />
+            <PostList />
             <div className="my-2 py-2">
                 <h1 className="text-center">Take designs from ideas to development<br /> in one unified platform</h1>
             </div>
